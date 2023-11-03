@@ -1,4 +1,10 @@
-# Le coeur de Prospéro
+# Le coeur de Prospéro {#prosperohardcore}
 
-Le coeur de Prospéro est constitué des dictionnaires. En ce sens, avant d'être un outil d'exploration de corpus, Prospéro est un langage de description de textes que l'on peut très bien appliquer sans recourir au logiciel. 
+Le coeur de Prospéro est constitué des dictionnaires. En ce sens, avant d'être un outil d'exploration de corpus, Prospéro est un langage de description de textes que l'on peut très bien appliquer sans recourir au logiciel. Par exemple, on fait déja du "Prospéro" si on lit le texte ci-dessous en se demandant quelles sont les *entités*, comment sont-elles *qualifiées*, dans quelles *épreuves* sont-elles engagées, dans quels *mondes* sont-elles prises, s'il y a des *marqueurs*.
+
+>Vendredi prochain, les États membres européens se prononceront probablement dans le cadre de la SCOPAFF sur l'interdiction ou non de trois matières actives présentes dans certains produits phytosanitaires en raison de leur impact éventuel sur la santé des abeilles. Les trois matières actives en question appartiennent à la famille des néonicotinoïdes et sont cruciales pour la culture de la betterave et de la chicorée en Belgique. En cas d'interdiction, la Confédération des Betteraviers Belges (CBB) demande certainement une exception pour ces deux cultures.
+
+>Certaines études souligneraient le danger de l'utilisation des néonicotinoïdes sur les cultures qui suivent les betteraves et avec lesquelles les abeilles peuvent potentiellement entrer en contact. D'autres études indiqueraient que ce risque est minime, voire inexistant. Quoiqu'il en soit, certains politiciens se sont prononcés pour une interdiction européenne des néonicotinoïdes.
+
+>Leur abandon dans l'enrobage des semences de betteraves sucrières et de chicorées pourrait avoir de graves conséquences pour les betteraviers belges. Les néonicotinoïdes sont actuellement la meilleure protection disponible contre la jaunisse ; une maladie très présente dans nos régions qui peut entraîner plus de 50 % de pertes de récolte en betteraves et en chicorées. Cette perte de revenus viendrait s'ajouter à des conditions de marché déjà difficiles, suite à la suppression des quotas et du prix minimum européens depuis septembre 2017.
 
