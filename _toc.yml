@@ -4,5 +4,6 @@
 format: jb-book
 root: intro
 chapters:
+- file: prospero_and_others
 - file: prosperohardcore
 - file: bibliographie
