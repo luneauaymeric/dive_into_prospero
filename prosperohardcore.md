@@ -131,7 +131,7 @@ On remarque aussi qu'il y a des "expressions" qu'il peut être intéressant d'in
 
 ### Exercice 1
 
-Dans les deux textes disponibles [ici](https://framagit.org/Aymericluneau/prospero_formation/-/tree/master/textes) ou [là](https://cloud.prefigura.social/index.php/s/5XGPtbbnknmyaiW?path=%2FcorpusStagiaires) (un communiqué de presse de la Confédération des Betteraviers Belges et un communiqué de presse de Nature et Progrès Belgique)
+Dans le document disponible [ici](https://github.com/luneauaymeric/dive_into_prospero/blob/main/text_macron_melenchon_youtube.txt)
 
 -   Identifiez les différents types de base (entité, qualité, marqueur, épreuve)
 
@@ -204,7 +204,7 @@ Enfin, les **catégories** permettent de typifier des registres discursifs : pol
 
 ## Exercice 2
 
-Dans les deux textes disponibles [ici](https://framagit.org/Aymericluneau/prospero_formation/-/tree/master/textes) ou [là](https://cloud.prefigura.social/index.php/s/5XGPtbbnknmyaiW?path=%2FcorpusStagiaires) (un communiqué de presse de la Confédération des Betteraviers Belges et un communiqué de presse de Nature et Progrès Belgique)
+Dans le document utilisé pour l'exercice 1
 
 -   Quels sont les êtres-fictifs que nous pouvons créer pour "faciliter" la compréhension des textes ? Même question pour les collections ?
 
