@@ -34,7 +34,7 @@ td{
     padding-left: 1;
     padding-right: 1;
   }
-  
+
 tr:hover {background-color: coral;}
 
 </style>
@@ -114,7 +114,7 @@ Le logiciel Prospéro découpe les textes en énoncés. Une chaîne de caractèr
 
 
 
-Il peut arriver que certains termes ne soient pas indexés dans les dictionnaires. Il sera alors considéré comme "indéfini". La première façon d'enrichir ses dictionnaires, c'est donc de classer les indéfinis dans un des types de base. Ainsi, on ajoutera "SCOPAFF" et "néonicotinoïdes" à la liste des entités, et "phytosanitaires" à la liste des qualité. 
+Il peut arriver que certains termes ne soient pas indexés dans les dictionnaires. Il sera alors considéré comme "indéfini". La première façon d'enrichir ses dictionnaires, c'est donc de classer les indéfinis dans un des types de base. Ainsi, on ajoutera "SCOPAFF" et "néonicotinoïdes" à la liste des entités, et "phytosanitaires" à la liste des qualité.
 
 ````{margin}
 ```{note}
@@ -127,6 +127,15 @@ Attention, Prospéro ne gère pas automatiquement le singulier/pluriel, le mascu
 On remarque aussi qu'il y a des "expressions" qu'il peut être intéressant d'indexer : "matières actives", "produits phytosanitaires", "santé des abeilles", "Confédération des Betteraviers Belges", "en raison".
 
 > Vendredi prochain, les <entite>États membres</entite> européens se prononceront probablement dans le cadre de la SCOPAFF sur l'interdiction ou non de trois <entite>matières actives</entite> présentes dans certains <entite>produits phytosanitaires</entite> <motoutil>en raison</motoutil> de leur impact éventuel sur la <entite>santé des abeilles</entite>. Les trois <entite>matières actives</entite> en question appartiennent à la <entite>famille des néonicotinoïdes</entite> et sont cruciales pour la culture de la betterave et de la chicorée en Belgique. En cas d'interdiction, la <entite>Confédération des Betteraviers Belges</entite> (CBB) demande certainement une exception pour ces deux cultures.
+
+### Exercice 1
+
+Dans les deux textes disponibles [ici](https://framagit.org/Aymericluneau/prospero_formation/-/tree/master/textes) ou [là](https://cloud.prefigura.social/index.php/s/5XGPtbbnknmyaiW?path=%2FcorpusStagiaires) (un communiqué de presse de la Confédération des Betteraviers Belges et un communiqué de presse de Nature et Progrès Belgique)
+
+-   Identifiez les différents types de base (entité, qualité, marqueur, épreuve)
+
+-   Quelles expressions avez-vous repérées ? À quels types appartiennent-elle ?
+
 
 
 ## Dictionnaires de concepts
@@ -163,7 +172,7 @@ La question des expressions, qui en un sens suppose déjà un travail interprét
 
 <br>
 
-Les **êtres-fictifs** font écho à la notion d'"actant" dans la sémantique structurale de {cite:t}`greimas2002`. Ils regroupent les entités qui font référence à un même objet ou actant. Par exemple, on peut considérer que "bettraviers", bettraviers belges", "Confédération des Betteraviers Belges" font référence à l'"être-fictif" BETTRAVIERS@. La constitution d'être-fictifs est particulièrement utile lorsqu'on travaille sur les partis et personnalités politiques. 
+Les **êtres-fictifs** font écho à la notion d'"actant" dans la sémantique structurale de {cite:t}`greimas2002`. Ils regroupent les entités qui font référence à un même objet ou actant. Par exemple, on peut considérer que "bettraviers", bettraviers belges", "Confédération des Betteraviers Belges" font référence à l'"être-fictif" BETTRAVIERS@. La constitution d'être-fictifs est particulièrement utile lorsqu'on travaille sur les partis et personnalités politiques.
 
 - PS@ : Parti socialiste, rue de Solférino, parti à la rose, etc.
 
@@ -192,17 +201,13 @@ Enfin, les **catégories** permettent de typifier des registres discursifs : pol
 - catégories d'épreuve comme "Accuser" ("accuse", "a mis en cause", "a admonesté")
 
 
-## Exercice n°1 :
+## Exercice 2
 
 Dans les deux textes disponibles [ici](https://framagit.org/Aymericluneau/prospero_formation/-/tree/master/textes) ou [là](https://cloud.prefigura.social/index.php/s/5XGPtbbnknmyaiW?path=%2FcorpusStagiaires) (un communiqué de presse de la Confédération des Betteraviers Belges et un communiqué de presse de Nature et Progrès Belgique)
 
--   Identifiez les différents types de base (entité, qualité, marqueur, épreuve)
-
--   Quelles expressions avez-vous repérées ? À quels types appartiennent-elle ?
-
 -   Quels sont les êtres-fictifs que nous pouvons créer pour "faciliter" la compréhension des textes ? Même question pour les collections ?
 
--   Avez-vous identifié des ensembles d'entités, de qualité ou de marqueurs qui pourraient être regroupés au sein de catégorie ? Que nous apprennent-ils sur l'argumentation des acteurs ?
+-   Avez-vous identifié des ensembles d'entités, de qualité ou de marqueurs qui pourraient être regroupés au sein de catégories ? Que nous apprennent-ils sur l'argumentation des acteurs ?
 
 ## Références
 
