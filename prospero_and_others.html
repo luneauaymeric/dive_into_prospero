@@ -309,19 +309,31 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mondes-lexicaux-et-statistiques-frequentielles">
-   “Mondes lexicaux” et statistiques fréquentielles
+  <a class="reference internal nav-link" href="#les-caqdas">
+   Les CAQDAS
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#approche-probabiliste-du-topic-modelling">
-   Approche probabiliste du topic modelling
+  <a class="reference internal nav-link" href="#les-outils-d-analyse-textuelle">
+   les outils d’analyse textuelle
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#plongement-de-mots-top2vec-bertopic">
-   Plongement de mots : Top2Vec, BERTopic
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mondes-lexicaux-et-statistiques-frequentielles">
+     “Mondes lexicaux” et statistiques fréquentielles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#approche-probabiliste-du-topic-modelling">
+     Approche probabiliste du topic modelling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plongement-de-mots-et-reseaux-de-neurones-top2vec-bertopic">
+     Plongement de mots et réseaux de neurones: Top2Vec, BERTopic
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -343,19 +355,31 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mondes-lexicaux-et-statistiques-frequentielles">
-   “Mondes lexicaux” et statistiques fréquentielles
+  <a class="reference internal nav-link" href="#les-caqdas">
+   Les CAQDAS
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#approche-probabiliste-du-topic-modelling">
-   Approche probabiliste du topic modelling
+  <a class="reference internal nav-link" href="#les-outils-d-analyse-textuelle">
+   les outils d’analyse textuelle
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#plongement-de-mots-top2vec-bertopic">
-   Plongement de mots : Top2Vec, BERTopic
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mondes-lexicaux-et-statistiques-frequentielles">
+     “Mondes lexicaux” et statistiques fréquentielles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#approche-probabiliste-du-topic-modelling">
+     Approche probabiliste du topic modelling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plongement-de-mots-et-reseaux-de-neurones-top2vec-bertopic">
+     Plongement de mots et réseaux de neurones: Top2Vec, BERTopic
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -367,22 +391,66 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="l-analyse-textuelle-prospero-et-les-autres">
+  <style type="text/css">
+
+entite{
+  background-color: yellow;
+}
+
+qualite{
+  background-color: pink;
+}
+
+marqueur{
+  background-color: #33FFF0;
+}
+
+epreuve{
+  background-color: #4cff33;
+}
+
+motoutil{
+  background-color:  #ec7063 ;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+  }
+
+td{
+    font-size:12pt;
+    vertical-align: top;
+    padding-left: 1;
+    padding-right: 1;
+  }
+
+tr:hover {background-color: coral;}
+
+</style>
+<section class="tex2jax_ignore mathjax_ignore" id="l-analyse-textuelle-prospero-et-les-autres">
 <h1>L’analyse textuelle : Prospéro et les autres<a class="headerlink" href="#l-analyse-textuelle-prospero-et-les-autres" title="Permalink to this headline">#</a></h1>
 <p>Les chercheurs et chercheuses en sciences humaines et sociales disposent aujourd’hui d’un large éventail d’outils et de méthodes pour analyser des corpus textuels. Afin de se rendre compte de l’évolution de ce champ, de son dynamisme et de la position que Prospéro y occupe, on peut utilement lire l’ouvrage collectif <em>Analyses textuelles en sociologie</em> <span id="id1">[<a class="reference internal" href="bibliographie.html#id3" title="Claire Brossaud, Patrick Trabal, and Karl Van Meter. Analyses Textuelles En Sociologie: Logiciels, Méthodes, Usages. Presses universitaires de Rennes, October 2006. ISBN 978-2-7535-0310-6. doi:10.3917/pur.bross.2006.01.">Brossaud <em>et al.</em>, 2006</a>]</span> ou l’article de <span id="id2">Cointet and Parasie [<a class="reference internal" href="bibliographie.html#id5" title="Jean-Philippe Cointet and Sylvain Parasie. Ce que le big data fait à l'analyse sociologique des textes: Un panorama critique des recherches contemporaines. Revue française de sociologie, Vol. 59(3):533–557, September 2018. doi:10.3917/rfs.593.0533.">2018</a>]</span>.</p>
+<section id="les-caqdas">
+<h2>Les CAQDAS<a class="headerlink" href="#les-caqdas" title="Permalink to this headline">#</a></h2>
+<p>La première famille d’outils, voire de logiciels, par rapport à laquelle on peut situer Prospéro est la famille des <a href="https://mate-shs.cnrs.fr/tuto02-atlasti-nvivo-abrial-salomon/#:~:text=Les%20CAQDAS%20(Computer%2DAssisted%20Qualitative,supports%20ethnographiques%2C%20audio%2C%20vid%C3%A9o%E2%80%A6">CAQDAS</a> (Computer-Assisted Qualitative Data Analysis Software) tels que NVivo ou Atlas-ti dont l’un des objectifs, si on peut dire, est d’organiser le travail d’exploration (et de codage) qualitatif d’un corpus de documents variés, notamment du point du vue du format (audio, vidéo, images, textes). Ils représentent un dispositif de gestion des données qualitatives et de traçabilité du processus d’analyse <span id="id3">[<a class="reference internal" href="bibliographie.html#id14" title="Thibaut Rioufreyt. L'outil et la méthode. Des fonctionnalités techniques des CAQDAS à leurs usages méthodologiques. Introduction. BMS: Bulletin of Sociological Methodology / Bulletin de Méthodologie Sociologique, pages 7–27, 2019. URL: https://www.jstor.org/stable/26747970 (visited on 2023-11-06), arXiv:26747970.">Rioufreyt, 2019</a>]</span>.</p>
+<p>Du point de vue épistémologique et méthodologique, la mobilisation des CAQDAS s’inscrit souvent dans une approche “inductive” au sens où ils permettent de faire émerger des axes d’analyse au fur et à mesure de la constitution du corpus et de l’exploration des corpus. Il serait probablement plus juste de parler d’approche abductive. En revanche, ils sont relativement “neutres” méthodologiquement au sens où ils ne reposent pas sur un “type” d’analyse comme cela peut-être le cas pour la “méthode alceste” (voir ci-après).</p>
+</section>
+<section id="les-outils-d-analyse-textuelle">
+<h2>les outils d’analyse textuelle<a class="headerlink" href="#les-outils-d-analyse-textuelle" title="Permalink to this headline">#</a></h2>
 <section id="mondes-lexicaux-et-statistiques-frequentielles">
-<h2>“Mondes lexicaux” et statistiques fréquentielles<a class="headerlink" href="#mondes-lexicaux-et-statistiques-frequentielles" title="Permalink to this headline">#</a></h2>
+<h3>“Mondes lexicaux” et statistiques fréquentielles<a class="headerlink" href="#mondes-lexicaux-et-statistiques-frequentielles" title="Permalink to this headline">#</a></h3>
 <p>Dans le monde francophone, l’autre logiciel auquel on compare le plus souvent Prospéro est Iramuteq (version freeware d’Alceste). Iramuteq repose sur la “méhode Alceste” mis au point par Max Reinert dans la continuité des methodes développées par Benzecri (AFC) et s’inscrit, à cet égard, dans l’école “française” de l’analyse des données.</p>
 <blockquote>
-<div><p>« Le locuteur au cours de son énonciation investit des mondes propres successifs et ces lieux, en imposant leurs objets, imposent du même coup leur type de vocabulaire. En conséquence, l’étude statistique de la distribution de ce vocabulaire devrait pouvoir permettre de retrouver la trace des ‘environnements mentaux’ que le locuteur a successivement investis, trace perceptible sous forme de ‘mondes lexicaux’ » <span id="id3">[<a class="reference internal" href="bibliographie.html#id8" title="Reinert Max. Les &quot;mondes lexicaux&quot; et leur 'logique&quot; à travers l'analyse statistique d'un corpus de récits de cauchemars. Langage et société, 66(1):5–39, 1993. doi:10.3406/lsoc.1993.2632.">Max, 1993</a>]</span></p>
+<div><p>« Le locuteur au cours de son énonciation investit des mondes propres successifs et ces lieux, en imposant leurs objets, imposent du même coup leur type de vocabulaire. En conséquence, l’étude statistique de la distribution de ce vocabulaire devrait pouvoir permettre de retrouver la trace des ‘environnements mentaux’ que le locuteur a successivement investis, trace perceptible sous forme de ‘mondes lexicaux’ » <span id="id4">[<a class="reference internal" href="bibliographie.html#id10" title="Reinert Max. Les &quot;mondes lexicaux&quot; et leur 'logique&quot; à travers l'analyse statistique d'un corpus de récits de cauchemars. Langage et société, 66(1):5–39, 1993. doi:10.3406/lsoc.1993.2632.">Max, 1993</a>]</span></p>
 </div></blockquote>
 <blockquote>
-<div><p>[Hypothèse 1] Nous faisons l’hypothèse qu’un corpus de texte peut être considéré comme un ensemble d’énoncés indépendants et redondants, dans la mesure où chaque énoncé est supposé porter l’empreinte d’une même processus sous-jacent dépendant des conditions de production de cet énonce (d’ordre psychique, social, culturel, narratif, etc.) <span id="id4">[<a class="reference internal" href="bibliographie.html#id9" title="Max Reinert. Classification hoérarchique descendante et analyse lexicale par contexte. Application au corpus des poésies d'A. Rimbaud. BMS: Bulletin of Sociological Methodology / Bulletin de Méthodologie Sociologique, pages 53–90, 1987. URL: http://www.jstor.org/stable/43761524 (visited on 2023-11-06), arXiv:43761524.">Reinert, 1987</a>]</span></p>
+<div><p>[Hypothèse 1] Nous faisons l’hypothèse qu’un corpus de texte peut être considéré comme un ensemble d’énoncés indépendants et redondants, dans la mesure où chaque énoncé est supposé porter l’empreinte d’une même processus sous-jacent dépendant des conditions de production de cet énonce (d’ordre psychique, social, culturel, narratif, etc.) <span id="id5">[<a class="reference internal" href="bibliographie.html#id11" title="Max Reinert. Classification hoérarchique descendante et analyse lexicale par contexte. Application au corpus des poésies d'A. Rimbaud. BMS: Bulletin of Sociological Methodology / Bulletin de Méthodologie Sociologique, pages 53–90, 1987. URL: http://www.jstor.org/stable/43761524 (visited on 2023-11-06), arXiv:43761524.">Reinert, 1987</a>]</span></p>
 </div></blockquote>
 <blockquote>
 <div><p>[Hypothèse 2] Dans un corpus vérifiant l’hypothèse 1, “les énoncés” utilisant plutôt les mêmes vocables renvoient généralement à une même représentation sous-jacente, et ceci avec d’autant plus de certitudes que le nombre d’énoncés est grand.</p>
 </div></blockquote>
-<p>La méthode Alceste, développée initialement pour l’analyse de contenu en psychologie <span id="id5">[<a class="reference internal" href="bibliographie.html#id9" title="Max Reinert. Classification hoérarchique descendante et analyse lexicale par contexte. Application au corpus des poésies d'A. Rimbaud. BMS: Bulletin of Sociological Methodology / Bulletin de Méthodologie Sociologique, pages 53–90, 1987. URL: http://www.jstor.org/stable/43761524 (visited on 2023-11-06), arXiv:43761524.">Reinert, 1987</a>]</span>, consiste à appliquer un algorithme de classification hiérarchique descendante à partir d’une matrice ou tableau lexical <em>énoncés X mots</em>.On parle de classification hiérarchique descendante, car l’algorithme consiste a “découper” (ou partitionner) le tableau lexical de sorte à maximiser le khi-deux au sein de chaque sous partie <span id="id6">[<a class="reference internal" href="bibliographie.html#id9" title="Max Reinert. Classification hoérarchique descendante et analyse lexicale par contexte. Application au corpus des poésies d'A. Rimbaud. BMS: Bulletin of Sociological Methodology / Bulletin de Méthodologie Sociologique, pages 53–90, 1987. URL: http://www.jstor.org/stable/43761524 (visited on 2023-11-06), arXiv:43761524.">Reinert, 1987</a>, <a class="reference internal" href="bibliographie.html#id10" title="Max Reinert. Une méthode de classification des énoncés d'un corpus présentée à l'aide d'une application. Les cahiers de l'analyse des données, 15(1):21–36, 1990. URL: http://www.numdam.org/item/CAD_1990__15_1_21_0/.">Reinert, 1990</a>]</span>. L’opération est itérée autant de fois que demandée.</p>
+<p>La méthode Alceste, développée initialement pour l’analyse de contenu en psychologie <span id="id6">[<a class="reference internal" href="bibliographie.html#id11" title="Max Reinert. Classification hoérarchique descendante et analyse lexicale par contexte. Application au corpus des poésies d'A. Rimbaud. BMS: Bulletin of Sociological Methodology / Bulletin de Méthodologie Sociologique, pages 53–90, 1987. URL: http://www.jstor.org/stable/43761524 (visited on 2023-11-06), arXiv:43761524.">Reinert, 1987</a>]</span>, consiste à appliquer un algorithme de classification hiérarchique descendante à partir d’une matrice ou tableau lexical <em>énoncés X mots</em>.On parle de classification hiérarchique descendante, car l’algorithme consiste a “découper” (ou partitionner) le tableau lexical de sorte à maximiser le khi-deux au sein de chaque sous partie <span id="id7">[<a class="reference internal" href="bibliographie.html#id11" title="Max Reinert. Classification hoérarchique descendante et analyse lexicale par contexte. Application au corpus des poésies d'A. Rimbaud. BMS: Bulletin of Sociological Methodology / Bulletin de Méthodologie Sociologique, pages 53–90, 1987. URL: http://www.jstor.org/stable/43761524 (visited on 2023-11-06), arXiv:43761524.">Reinert, 1987</a>, <a class="reference internal" href="bibliographie.html#id12" title="Max Reinert. Une méthode de classification des énoncés d'un corpus présentée à l'aide d'une application. Les cahiers de l'analyse des données, 15(1):21–36, 1990. URL: http://www.numdam.org/item/CAD_1990__15_1_21_0/.">Reinert, 1990</a>]</span>. L’opération est itérée autant de fois que demandée.</p>
 <table>
 <thead>
 <tr>
@@ -426,14 +494,14 @@ title="Print to PDF"
 </table>
 </section>
 <section id="approche-probabiliste-du-topic-modelling">
-<h2>Approche probabiliste du topic modelling<a class="headerlink" href="#approche-probabiliste-du-topic-modelling" title="Permalink to this headline">#</a></h2>
+<h3>Approche probabiliste du topic modelling<a class="headerlink" href="#approche-probabiliste-du-topic-modelling" title="Permalink to this headline">#</a></h3>
 <p><img alt="" src="_images/topic_modelling.jpeg" /></p>
 <p>Une autre méthode de “Topic modelling” populaire, notamment anglo-saxon, est le “Latent dirichlet allocation”. L’algorithme vise à determiner la probabilité qu’un mot <em>m</em> appartienne au topic <em>t</em> et que le document <em>d</em> contenant <em>m</em> appartienne également à <em>t</em></p>
 <blockquote>
-<div><p>Latent Dirichlet Allocation (LDA) is used as a topic modelling technique that can classify text in a document to a particular topic. It uses Dirichlet distribution to find topics for each document model and words for each topic model. [https://medium.com/analytics-vidhya/latent-dirichelt-allocation-1ec8729589d4#:~:text=Latent%20Dirichlet%20allocation%20is%20a,rules%2C%20facts%20that%20we%20considered.](a brief explanation)</p>
+<div><p>Latent Dirichlet Allocation (LDA) is used as a topic modelling technique that can classify text in a document to a particular topic. It uses Dirichlet distribution to find topics for each document model and words for each topic model. <a href="https://medium.com/analytics-vidhya/latent-dirichelt-allocation-1ec8729589d4#:~:text=Latent%20Dirichlet%20allocation%20is%20a,rules%2C%20facts%20that%20we%20considered">(a brief explanation)</a></p>
 </div></blockquote>
 <blockquote>
-<div><p>It is one of the most popular topic modeling methods. Each document is made up of various words, and each topic also has various words belonging to it. The aim of LDA is to find topics a document belongs to, based on the words in it. Confused much? Here is an example to walk you through it. [https://towardsdatascience.com/latent-dirichlet-allocation-lda-9d1cd064ffa2](A Beginner’s Guide to Latent Dirichlet Allocation(LDA))</p>
+<div><p>It is one of the most popular topic modeling methods. Each document is made up of various words, and each topic also has various words belonging to it. The aim of LDA is to find topics a document belongs to, based on the words in it. Confused much? Here is an example to walk you through it. <a href="https://towardsdatascience.com/latent-dirichlet-allocation-lda-9d1cd064ffa2">(A Beginner’s Guide to Latent Dirichlet Allocation(LDA))</a></p>
 </div></blockquote>
 <blockquote>
 <div><p>Le modèle Latent Dirichlet Allocation suppose que chaque document est un mélange d’un petit nombre de topics, et que chaque occurrence d’un mot correspond à l’un des sujets du document. Chaque mot se voit attribuer un topic selon la loi de Dirichlet.</p>
@@ -445,14 +513,22 @@ title="Print to PDF"
 <li><p>De la proportion de documents appartenant au topic <em>t</em> à cause du mot <em>m</em>.</p></li>
 </ul>
 <p>L’algorithme est répété jusqu’à trouver une distribution stabilisée.</p>
-<p>Comme pour la “méthode alceste”, on considère les documents et les énoncés consituant ces documents comme des “sacs de mots”. L’ordre et le role grammatical n’est pas pris en compte. Ainsi, il est habituel de lemmatiser les termes. Le LDA suppose également de constuire un tableau lexical <em>énoncé X termes</em>. Toutefois, la méthode de “clustering”, qui permet de déterminer les topics, est probabiliste. L’intérêt par rapport à la méthode alecste est que le LDA autorise un document à appartenir à plusieurs topic. Une des principales limites de cette méthode est qu’il faut déterminer en amont le nombre de “topics” caractérisant le corpus. Par ailleurs, il fonctionne assez mal sur des “documents” courts comme les tweets.</p>
+<p>Comme pour la “méthode alceste”, on considère les documents et les énoncés constituant ces documents comme des “sacs de mots”. L’ordre et le rôle grammatical n’est pas pris en compte. Ainsi, il est habituel de lemmatiser les termes. Le LDA suppose également de constuire un tableau lexical <em>énoncé X termes</em>. Toutefois, la méthode de “clustering”, qui permet de déterminer les topics, est probabiliste. L’intérêt par rapport à la méthode alecste est que le LDA autorise un document à appartenir à plusieurs topic. Une des principales limites de cette méthode est qu’il faut déterminer en amont le nombre de “topics” caractérisant le corpus. Par ailleurs, il fonctionne assez mal sur des “documents” courts comme les tweets.</p>
+<p>On trouvera une application de cette méthode dans <span id="id8">[<a class="reference internal" href="bibliographie.html#id6" title="Paul DiMaggio, Manish Nag, and David Blei. Exploiting affinities between topic modeling and the sociological perspective on culture: Application to newspaper coverage of U.S. government arts funding. Poetics, 41(6):570–606, December 2013. doi:10.1016/j.poetic.2013.08.004.">DiMaggio <em>et al.</em>, 2013</a>]</span></p>
 </section>
-<section id="plongement-de-mots-top2vec-bertopic">
-<h2>Plongement de mots : Top2Vec, BERTopic<a class="headerlink" href="#plongement-de-mots-top2vec-bertopic" title="Permalink to this headline">#</a></h2>
-<p>La dernière famille de méthodes de topic modelling, aussi la plus récente, consiste à s’appuyer des modèles de “plongement de mot” (<em>word embedding</em>). Là encore, on considère les documents comme des sacs de mot que l’on représente sous forme de tableau lexical (ou matrice). Cette matrice permet d’associer un vecteur à chaque terme et, ainsi, de positionner ce terme dans un espace composé d’un nombre de dimensions réduit. Ces modèles fonctionnent grâce à des algorithmes d’apprentissage. Top2vec (basé sur le modèle d’embedding word2vec de Google) et BERTopic sont les algorithmes les plus souvents cités.</p>
+<section id="plongement-de-mots-et-reseaux-de-neurones-top2vec-bertopic">
+<h3>Plongement de mots et réseaux de neurones: Top2Vec, BERTopic<a class="headerlink" href="#plongement-de-mots-et-reseaux-de-neurones-top2vec-bertopic" title="Permalink to this headline">#</a></h3>
+<p>La dernière famille de méthodes de topic modelling, aussi la plus récente, consiste à s’appuyer des modèles de “plongement de mot” (<em>word embedding</em>). Alors que les deux précédentes méthodes appréhendent les textes comme des sacs de mot, celles-ci permettent de conserver le “sens” des termes en encodant dans des vecteurs le contexte d’apparition. Ainsi deux termes sont dits proches s’ils apparaissent dans des contextes similaires. Ces modèles fonctionnent grâce à des algorithmes d’apprentissage. Top2vec (basé sur le modèle d’embedding word2vec de Google) est l’algorithmes le plus connu. Il est basé sur le modèle d’embedding “word2vec” et “doc2vec” de Google <a href="https://top2vec.readthedocs.io/en/stable/Top2Vec.html#how-does-it-work"> (Voir documentation)</a>.</p>
+<p><img alt="word2vec" src="_images/wors2vec.png" /></p>
 <blockquote>
 <div><p>Word embeddings are a type of word representation that allows words with similar meaning to have a similar representation. Its the collective name for a set of language modelling and feature learning techniques in natural language processing (NLP) where words or phrases from the vocabulary are mapped to vectors of real numbers.</p>
 </div></blockquote>
+<blockquote>
+<div><p>Les algorithmes de « plongement de mots » ou de « plongement lexical » (word embedding) forment la classe la plus récente parmi les méthodes caractéristiques des big data. Née dans les laboratoires de Google, cette famille d’algorithmes s’appuie sur des techniques d’apprentissage automatique appliquées à de très larges corpus de données souvent issus du web. À partir de ces corpus, les algorithmes apprennent la « position » de chaque mot du vocabulaire dans un espace vectoriel limité à quelques centaines de dimensions. Le processus d’apprentissage garantit que deux entités lexicales partageant les mêmes contextes se retrouveront à proximité l’une de l’autre dans l’espace euclidien dans lequel elles sont plongées. <span id="id9">[<a class="reference internal" href="bibliographie.html#id5" title="Jean-Philippe Cointet and Sylvain Parasie. Ce que le big data fait à l'analyse sociologique des textes: Un panorama critique des recherches contemporaines. Revue française de sociologie, Vol. 59(3):533–557, September 2018. doi:10.3917/rfs.593.0533.">Cointet and Parasie, 2018</a>]</span></p>
+</div></blockquote>
+<p>La difficulté tient principalement à la boite noire créée par l’utilisation de réseau de neurone. Certains auteurs remettent également en question la possibilité de déduire une relation “sémantique” entre des termes à partir de mesure de similarité comme le cosinus. Enfin ces méthodes ont été développées dans des champs professionnels extérieurs aux sciences humaines et sociales – voire extérieurs aux champs académiques comme le rappellent <span id="id10">Cointet and Parasie [<a class="reference internal" href="bibliographie.html#id5" title="Jean-Philippe Cointet and Sylvain Parasie. Ce que le big data fait à l'analyse sociologique des textes: Un panorama critique des recherches contemporaines. Revue française de sociologie, Vol. 59(3):533–557, September 2018. doi:10.3917/rfs.593.0533.">2018</a>]</span>.</p>
+<p><img alt="Top2Vec" src="_images/doc_word_embedding.svg" /></p>
+</section>
 </section>
 </section>
 
