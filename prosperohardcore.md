@@ -39,8 +39,9 @@ tr:hover {background-color: coral;}
 
 </style>
 
+> « Un espace de représentation : le texte décrit un état de choses, campe un monde, déploie un univers d’êtres et de relations. Un récit : Le texte raconte une histoire, produit une intrigue. Un dialogue : tout texte instaure au moins une relation dialogique. Une argumentation : le texte mobilise des procédés pour convaincre, justifier, défendre ou critiquer, examiner des faits ou des arguments. » {cite:p}`chateauraynaud2003` (p.82-83)
 
-Avant d'être un outil d'exploration de corpus, Prospéro est un langage de description de textes que l'on peut très bien appliquer sans recourir au logiciel. Par exemple, on fait déja du "Prospéro" si on lit le texte ci-dessous en se demandant quelles sont les *entités*, comment sont-elles *qualifiées*, dans quelles *épreuves* sont-elles engagées, dans quels *mondes* sont-elles prises, s'il y a des *marqueurs*.
+Avant d'être un outil d'exploration de corpus, Prospéro est un langage de description de textes que l'on peut très bien appliquer sans recourir au logiciel. Par exemple, on fait déjà du "Prospéro" si on lit le texte ci-dessous en se demandant quelles sont les *entités*, comment sont-elles *qualifiées*, dans quelles *épreuves* sont-elles engagées, dans quels *mondes* sont-elles prises, s'il y a des *marqueurs*.
 
 > Vendredi prochain, les États membres européens se prononceront probablement dans le cadre de la SCOPAFF sur l'interdiction ou non de trois matières actives présentes dans certains produits phytosanitaires en raison de leur impact éventuel sur la santé des abeilles. Les trois matières actives en question appartiennent à la famille des néonicotinoïdes et sont cruciales pour la culture de la betterave et de la chicorée en Belgique. En cas d'interdiction, la Confédération des Betteraviers Belges (CBB) demande certainement une exception pour ces deux cultures.
 >
@@ -184,7 +185,7 @@ Un mot en lettres capitales suivi d'une arobase est la convention d'écriture ut
 ```
 ````
 
-Les **collections** prennent la forme de taxonomies ou de répertoires. Elles se rapprochent de la notion de "monde" {cite}`greimas2002`. Les collections rendent compte en effet des univers de référence des textes {cite}`chateauraynaud2003{p. 221}`. On pourra dire d'un article dans lequel la "collection" des organisations internationales est présente qu'il se réfère au monde des politiques internationales. Tandis que la présence d'une collection d'agences d'expertise comme l'EFSA, l'ANSES caractérisent souvent les textes qui parlent de controverses sanitaires ou environnementales. Dans Prospéro, les collections sont reconnaissables au fait que leurs noms sont écris en lettre capitale ponctués d'un astérique. Par exemple, la collection "ENNEMIS-DES-ABEILLES\*" rassemble les éléments chimiques, physiques ou biologiques qui représentent un risque pour la santé des abeilles.
+Les **collections** prennent la forme de taxonomies ou de répertoires. Elles se rapprochent de la notion de "monde" {cite}`greimas2002`. Les collections rendent compte en effet des univers de référence des textes {cite}`chateauraynaud2003` (p.221). On pourra dire d'un article dans lequel la "collection" des organisations internationales est présente qu'il se réfère au monde des politiques internationales. Tandis que la présence d'une collection d'agences d'expertise comme l'EFSA, l'ANSES caractérisent souvent les textes qui parlent de controverses sanitaires ou environnementales. Dans Prospéro, les collections sont reconnaissables au fait que leurs noms sont écris en lettre capitale ponctués d'un astérique. Par exemple, la collection "ENNEMIS-DES-ABEILLES\*" rassemble les éléments chimiques, physiques ou biologiques qui représentent un risque pour la santé des abeilles.
 
 ````{margin}
 ```{note}
