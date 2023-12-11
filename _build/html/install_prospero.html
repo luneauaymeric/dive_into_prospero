@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Télécharger et installer Prospéro &#8212; Dive into Prospero</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Bibliographie" href="bibliographie.html" />
+    <link rel="prev" title="Le coeur de Prospéro" href="prosperohardcore.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Dive into Prospero</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Table des matières
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="prospero_and_others.html">
+   L’analyse textuelle : Prospéro et les autres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="prosperohardcore.html">
+   Le coeur de Prospéro
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Télécharger et installer Prospéro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bibliographie.html">
+   Bibliographie
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/luneauaymeric/dive_into_prospero"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/luneauaymeric/dive_into_prospero/issues/new?title=Issue%20on%20page%20%2Finstall_prospero.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/install_prospero.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#windows">
+   Windows
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linux">
+   Linux
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installer-wine">
+     Installer Wine
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installer-prospero-avec-wine">
+     Installer Prospéro avec wine
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lancer-prospero-avec-wine">
+     Lancer Prospéro avec wine
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configurer-prospero">
+   Configurer Prospéro
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#informations-sur-ce-tutoriel">
+   Informations sur ce tutoriel
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Télécharger et installer Prospéro</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#windows">
+   Windows
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linux">
+   Linux
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installer-wine">
+     Installer Wine
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installer-prospero-avec-wine">
+     Installer Prospéro avec wine
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lancer-prospero-avec-wine">
+     Lancer Prospéro avec wine
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configurer-prospero">
+   Configurer Prospéro
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#informations-sur-ce-tutoriel">
+   Informations sur ce tutoriel
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="telecharger-et-installer-prospero">
+<h1>Télécharger et installer Prospéro<a class="headerlink" href="#telecharger-et-installer-prospero" title="Permalink to this headline">#</a></h1>
+<p>Pour télécharger Prospéro, se rendre à cette <a class="reference external" href="http://prosperologie.org/?sit=dl">adresse</a></p>
+<section id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">#</a></h2>
+<p>L’installation de Prospéro sur Windows ne devrait pas présenter de difficulté particulière. Il suffit de lancer le programme d’installation téléchargé et de suivre les instructions. Vous trouverez également une vidéo explicative <a class="reference external" href="https://webdiffusion.ehess.fr/permalink/v12618e7533d8ulkhh4y/">ici</a> une vidéo explicative.</p>
+</section>
+<section id="linux">
+<h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">#</a></h2>
+<p>Sur Linux et Mac, il faut au préalable installer une machine virtuelle qui “émulera” l’environnement windows.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Les instructions ci-dessous ont été testées sur une machine équipée Xubuntu 22.04.3 LTS (Jammy Jellyfish). Elles devraient donc fonctionner avec d’autres versions d’Ubuntu, ainsi que sur Debian, mais rien n’est garanti.</p>
+<p>La version de Wine est wine-6.0.3 (Ubuntu 6.0.3~repack-1)</p>
+</div>
+<section id="installer-wine">
+<h3>Installer Wine<a class="headerlink" href="#installer-wine" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
+<li><p>Vérifier que l’architecture 32 bit est activée</p></li>
+</ol>
+<ul>
+<li><p>La plupart des logiciels Windows sont conçus pour une architecture 32 bits, du coup il faut vérifier qu’elle est installée dans votre machine;</p></li>
+<li><p>Pour ce faire:</p>
+<ul class="simple">
+<li><p>ouvrez le terminal (Ctrl + Alt + T);</p></li>
+<li><p>exécutez :</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dpkg</span> <span class="o">--</span><span class="nb">print</span><span class="o">-</span><span class="n">architecture</span>
+
+</pre></div>
+</div>
+<ul>
+<li><p>la réponse doit être : “amd64”</p></li>
+<li><p>pour voir si l’architecture 32 bit est installée, exécutez ensuite :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dpkg</span> <span class="o">--</span><span class="nb">print</span><span class="o">-</span><span class="n">foreign</span><span class="o">-</span><span class="n">architectures</span>
+</pre></div>
+</div>
+</li>
+<li><p>si la réponse est “i386”, allez à l’étape 2 : “Ajouter le dépôt WineHQ”</p></li>
+<li><p>Sinon, il faut exécuter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">architecture</span> <span class="n">i386</span>
+</pre></div>
+</div>
+</li>
+<li><p>puis</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<ol class="simple">
+<li><p>Ajouter le dépôt WineHQ</p></li>
+</ol>
+<ul>
+<li><p>Recherchez et installé la clé du dépôt, en exécutant:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="o">-</span><span class="n">nc</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">dl</span><span class="o">.</span><span class="n">winehq</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wine</span><span class="o">-</span><span class="n">builds</span><span class="o">/</span><span class="n">winehq</span><span class="o">.</span><span class="n">key</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>puis:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">-</span><span class="n">H</span> <span class="n">gpg</span> <span class="o">-</span><span class="n">o</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">trusted</span><span class="o">.</span><span class="n">gpg</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">winehq</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">gpg</span> <span class="o">--</span><span class="n">dearmor</span> <span class="n">winehq</span><span class="o">.</span><span class="n">key</span>
+</pre></div>
+</div>
+</li>
+<li><p>Ajoutez le dépôt (changez “jammy” pour le nom de votre distro):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="s1">&#39;deb https://dl.winehq.org/wine-builds/ubuntu/ jammy main&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Mettez à jour la base de données des paquets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<ol class="simple">
+<li><p>Vérifier que xterm est bien installée</p></li>
+</ol>
+<ul class="simple">
+<li><p>Wine nécessite la bibliothèque xterm pour être installé</p></li>
+<li><p>Vérifiez que xterm est installée:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xterm</span> <span class="o">-</span><span class="n">version</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Si xterm n’est pas installée, exécutez:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">xterm</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Procéder à l’installation de Wine</p></li>
+</ol>
+<ul class="simple">
+<li><p>Exécutez:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">wine64</span> <span class="n">wine32</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Vérifiez l’installation, en exécutant:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wine</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+</section>
+<section id="installer-prospero-avec-wine">
+<h3>Installer Prospéro avec wine<a class="headerlink" href="#installer-prospero-avec-wine" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://www.zdnet.com/article/how-to-run-a-windows-app-on-linux-with-wine/">https://www.zdnet.com/article/how-to-run-a-windows-app-on-linux-with-wine/</a>
+<a class="reference external" href="https://help.ubuntu.com/community/Wine">https://help.ubuntu.com/community/Wine</a></p>
+<ul class="simple">
+<li><p>Télécharger Prospéro dans le dossier de votre choix (exemple: /home/download)</p></li>
+<li><p>Ouvrir un terminal et aller dans le dossier utilisé à l’étape précédente</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">./</span><span class="n">download</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Utiliser la commande ci-après pour exécuter le fichier d’installation:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wine</span> <span class="n">setup</span><span class="o">-</span><span class="n">prospero</span><span class="o">-</span><span class="n">I</span><span class="o">-</span><span class="n">freeware</span><span class="o">.</span><span class="n">exe</span>
+</pre></div>
+</div>
+<p>Si l’application demande de sélectionner un dossier de direction, choisir de le placer sour “C:\Program Files”.</p>
+</section>
+<section id="lancer-prospero-avec-wine">
+<h3>Lancer Prospéro avec wine<a class="headerlink" href="#lancer-prospero-avec-wine" title="Permalink to this headline">#</a></h3>
+<ol class="simple">
+<li><p>Depuis un terminal:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Utiliser la commande suivante (en supposant que l’executable de Prospéro s’appelle “prospero-I.exe”) :</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wine</span> <span class="s2">&quot;/home/aymeric/.wine/drive_c/Program Files (x86)/Doxa/Prospéro-I/prospero-I.exe&quot;</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Créer un ‘lanceur’ sur le bureau:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Clique droit sur le bureau</p></li>
+<li><p>Cliquer sur Créer un lanceur</p></li>
+<li><p>Remplir les informations (choisir l’icone de votre choix)</p></li>
+<li><p>à la ligne “Commande”, écrire :</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wine</span> <span class="s2">&quot;/home/aymeric/.wine/drive_c/Program Files (x86)/Doxa/Prospéro-I/prospero-I.exe&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="configurer-prospero">
+<h2>Configurer Prospéro<a class="headerlink" href="#configurer-prospero" title="Permalink to this headline">#</a></h2>
+<p>Vous pouvez suivre les indications disponibles <a class="reference external" href="#configuration_prospero">ici</a>, vu qu’elles sont exactement les mêmes pour n’importe quel système d’exploitation de base.</p>
+</section>
+<section id="informations-sur-ce-tutoriel">
+<h2>Informations sur ce tutoriel<a class="headerlink" href="#informations-sur-ce-tutoriel" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Sources utilisées:</p>
+<ul>
+<li><p>https://linuxize.com/post/how-to-install-wine-on-ubuntu-20-04/</p></li>
+<li><p>https://wine.htmlvalidator.com/install-wine-on-ubuntu-20.04.html</p></li>
+<li><p>https://wiki.playonlinux.com/index.php/Troubleshooting_Common_Problems#Xterm_missing</p></li>
+</ul>
+</li>
+<li><p>Produit avec le soutien des associations Corpora et Prefigura.</p></li>
+<li><p>Création, révision et vérification: Waldir LISBOA ROCHA et Aymeric LUNEAU.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="prosperohardcore.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Le coeur de Prospéro</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="bibliographie.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bibliographie</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Aymeric Luneau, Waldir Lisboa Rochas<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

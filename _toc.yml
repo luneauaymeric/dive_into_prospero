@@ -6,4 +6,6 @@ root: intro
 chapters:
 - file: prospero_and_others
 - file: prosperohardcore
+- file: install_prospero
 - file: bibliographie
+
