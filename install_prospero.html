@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Bibliographie" href="bibliographie.html" />
+    <link rel="next" title="Configuration de Prospéro" href="configuration.html" />
     <link rel="prev" title="Le coeur de Prospéro" href="prosperohardcore.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -129,6 +129,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Télécharger et installer Prospéro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="configuration.html">
+   Configuration de Prospéro
   </a>
  </li>
  <li class="toctree-l1">
@@ -324,8 +329,8 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#installer-wine">
-     Installer Wine
+    <a class="reference internal nav-link" href="#installer-wine-sur-linux">
+     Installer Wine sur Linux
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -339,6 +344,28 @@ title="Print to PDF"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#macos">
+   macOS
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installer-wine">
+     Installer Wine
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#telecharger-et-installer-playonmac">
+   Télécharger et installer PlayOnMac
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installer-prospero-sur-playonmac">
+   Installer Prospéro sur PlayOnMac
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#configurer-prospero">
@@ -380,8 +407,8 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#installer-wine">
-     Installer Wine
+    <a class="reference internal nav-link" href="#installer-wine-sur-linux">
+     Installer Wine sur Linux
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -395,6 +422,28 @@ title="Print to PDF"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#macos">
+   macOS
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installer-wine">
+     Installer Wine
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#telecharger-et-installer-playonmac">
+   Télécharger et installer PlayOnMac
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installer-prospero-sur-playonmac">
+   Installer Prospéro sur PlayOnMac
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#configurer-prospero">
@@ -416,7 +465,44 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="telecharger-et-installer-prospero">
+  <style type="text/css">
+
+entite{
+  background-color: yellow;
+}
+
+qualite{
+  background-color: pink;
+}
+
+marqueur{
+  background-color: #33FFF0;
+}
+
+epreuve{
+  background-color: #4cff33;
+}
+
+motoutil{
+  background-color:  #ec7063 ;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+  }
+
+td{
+    font-size:12pt;
+    vertical-align: top;
+    padding-left: 1;
+    padding-right: 1;
+  }
+
+tr:hover {background-color: coral;}
+
+</style>
+<section class="tex2jax_ignore mathjax_ignore" id="telecharger-et-installer-prospero">
 <h1>Télécharger et installer Prospéro<a class="headerlink" href="#telecharger-et-installer-prospero" title="Permalink to this headline">#</a></h1>
 <p>Pour télécharger Prospéro, se rendre à cette <a class="reference external" href="http://prosperologie.org/?sit=dl">adresse</a></p>
 <section id="windows">
@@ -431,8 +517,8 @@ title="Print to PDF"
 <p>Les instructions ci-dessous ont été testées sur une machine équipée Xubuntu 22.04.3 LTS (Jammy Jellyfish). Elles devraient donc fonctionner avec d’autres versions d’Ubuntu, ainsi que sur Debian, mais rien n’est garanti.</p>
 <p>La version de Wine est wine-6.0.3 (Ubuntu 6.0.3~repack-1)</p>
 </div>
-<section id="installer-wine">
-<h3>Installer Wine<a class="headerlink" href="#installer-wine" title="Permalink to this headline">#</a></h3>
+<section id="installer-wine-sur-linux">
+<h3>Installer Wine sur Linux<a class="headerlink" href="#installer-wine-sur-linux" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Vérifier que l’architecture 32 bit est activée</p></li>
 </ol>
@@ -569,6 +655,51 @@ title="Print to PDF"
 </div>
 </section>
 </section>
+<section id="macos">
+<h2>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Les instructions ci-dessous ont été élaborées de manière générique et non pas été testées sur une version spécifique de macOS. N’hésitez pas à nous faire des retours si vous rencontrez des problèmes et/ou des nouvelles solutions.</p>
+</div>
+<section id="installer-wine">
+<h3>Installer Wine<a class="headerlink" href="#installer-wine" title="Permalink to this headline">#</a></h3>
+<p>Comme pour les environnement Ubuntu, Debian et Fedora, il faut d’abord installer Wine dont l’exécutable pour macOS se trouve <a class="reference external" href="https://wiki.winehq.org/Download">ici</a></p>
+</section>
+</section>
+<section id="telecharger-et-installer-playonmac">
+<h2>Télécharger et installer PlayOnMac<a class="headerlink" href="#telecharger-et-installer-playonmac" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>PlayOnMac est une interface graphique pour Wine</p></li>
+<li><p>Allez sur https://www.playonmac.com/fr/download.html.</p></li>
+<li><p>Choisissez bien l’option indiquée pour votre version de macOS.</p></li>
+<li><p>Une fois que le fichier dmg est téléchargé, il suffit de double-cliquer sur le disque et de glisser-déposer PlayOnMac dans le dossier application.</p></li>
+<li><p><a class="reference external" href="https://wiki.playonlinux.com/index.php/Troubleshooting_Common_Problems">Cette page</a>, néanmoins plutôt centrée sur Linux, récense les problèmes les plus communs avec le logiciel. Si vous rencontrez un souci, vous pouvez aussi vous dirigez vers le <a class="reference external" href="https://www.playonmac.com/fr/forums.html">forum dédié</a>. En tout cas, n’hésitez pas à demander de l’aide.</p></li>
+</ul>
+</section>
+<section id="installer-prospero-sur-playonmac">
+<h2>Installer Prospéro sur PlayOnMac<a class="headerlink" href="#installer-prospero-sur-playonmac" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Vous devez tout d’abord, si ce n’est déjà fait, télécharger Prospéro sur: http://prosperologie.org/?sit=dl (Il faudra s’inscrire);</p></li>
+<li><p>Ouvrez ensuite PlayOnMac;</p>
+<ul>
+<li><p>Si c’est la première fois que vous la démarrez, l’application devrait télécharger XQuartz et l’installer. N’empêchez pas ce processus.</p></li>
+</ul>
+</li>
+<li><p>Cliquez sur “Installer un logiciel”;</p></li>
+<li><p>Puis sur “Installer une application non supportée” (en bas, à gauche);</p></li>
+<li><p>Dans la fenêtre “Que souhaitez-vous faire?”, sélectionnez “Modifier une application existante” puis “Suivant”;</p></li>
+<li><p>Dans la fenêtre “Quel est le préfixe de votre programme?”, sélectionnez “playonmac” puis “Suivant”;</p></li>
+<li><p>Dans la fenêtre “Veuillez sélectionner le fichier d’installation à exécuter”, cliquez sur “Parcourir”;</p></li>
+<li><p>Une fenêtre Finder s’ouvre et il vous faut alors sélectionner le fichier d’installation Prospéro puis cliquer sur “ouvrir”;</p></li>
+<li><p>Acceptez toutes les paramètres par défaut suggérés par l’installateur;</p></li>
+<li><p>À la fin de la procédure d’installation de Prospéro, vous serez revenu sur la fenêtre PlayOnMac. N’hésitez alors pas à cliquer sur “Suivant”;</p></li>
+<li><p>Acceptez la création d’un raccourci vers l’application, en cliquant sur “Oui”;</p></li>
+<li><p>Sélectionnez alors le fichier prospero-1.exe, qui doit se trouver à l’intérieur de “PlayOnMac/wineprefix/playonmac/drive_c/Program Files/Doxa”, puis cliquez sur “Ouvrir”;</p></li>
+<li><p>Donnez un nom au raccourci: Prospéro. Cliquez sur “Suivant”;</p></li>
+<li><p>PlayOnMac vous demandera ensuite d’en choisir un deuxième, mais là vous pouvez cliquer sur “Non”;</p></li>
+<li><p>C’est normalement fini et vous devez maintenant avoir un raccourci Prospéro sur votre bureau. Vous pouvez fermer PlayOnMac.</p></li>
+</ul>
+</section>
 <section id="configurer-prospero">
 <h2>Configurer Prospéro<a class="headerlink" href="#configurer-prospero" title="Permalink to this headline">#</a></h2>
 <p>Vous pouvez suivre les indications disponibles <a class="reference external" href="#configuration_prospero">ici</a>, vu qu’elles sont exactement les mêmes pour n’importe quel système d’exploitation de base.</p>
@@ -579,12 +710,14 @@ title="Print to PDF"
 <li><p>Sources utilisées:</p>
 <ul>
 <li><p>https://linuxize.com/post/how-to-install-wine-on-ubuntu-20-04/</p></li>
+<li><p>https://www.zdnet.com/article/how-to-run-a-windows-app-on-linux-with-wine/</p></li>
 <li><p>https://wine.htmlvalidator.com/install-wine-on-ubuntu-20.04.html</p></li>
-<li><p>https://wiki.playonlinux.com/index.php/Troubleshooting_Common_Problems#Xterm_missing</p></li>
+<li><p>https://help.ubuntu.com/community/Wine</p></li>
+<li><p>https://wiki.playonlinux.com/index.php/Troubleshooting_Common_Problems</p></li>
 </ul>
 </li>
 <li><p>Produit avec le soutien des associations Corpora et Prefigura.</p></li>
-<li><p>Création, révision et vérification: Waldir LISBOA ROCHA et Aymeric LUNEAU.</p></li>
+<li><p>Création, révision et vérification: Waldir Lisboa Rocha et Aymeric Luneau</p></li>
 </ul>
 </section>
 </section>
@@ -623,10 +756,10 @@ title="Print to PDF"
             <p class="prev-next-title">Le coeur de Prospéro</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="bibliographie.html" title="next page">
+    <a class='right-next' id="next-link" href="configuration.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bibliographie</p>
+        <p class="prev-next-title">Configuration de Prospéro</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
