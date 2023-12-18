@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Bibliographie" href="bibliographie.html" />
+    <link rel="next" title="Concepts" href="les_dictionnaires_de_concepts.html" />
     <link rel="prev" title="Configuration de Prospéro" href="configuration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -139,6 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Charger un corpus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="les_dictionnaires_de_concepts.html">
+   Concepts
   </a>
  </li>
  <li class="toctree-l1">
@@ -328,6 +333,11 @@ title="Print to PDF"
    Zoom sur le fichier “.prc”
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#traiter-et-lecture-des-structures-du-corpus">
+   Traiter et lecture des structures du corpus
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -352,6 +362,11 @@ title="Print to PDF"
    Zoom sur le fichier “.prc”
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#traiter-et-lecture-des-structures-du-corpus">
+   Traiter et lecture des structures du corpus
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -364,16 +379,40 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="charger-un-corpus">
 <h1>Charger un corpus<a class="headerlink" href="#charger-un-corpus" title="Permalink to this headline">#</a></h1>
-<p>Le chargement d’un corpus se fait avec l’outil de “gestion de corpus” qui se trouve sous l’onglet “Fichier”. Une fois dans le gestionnaire de projet, on observe deux cadrans. À gauche, le cadran affiche l’adresse des textes du corpus. Pour le moment il est vide. À droite, le cadran affiche l’adresse des dictionnaires. Si Prospéro a été configuré, vous devez d’ailleurs voir l’adresse correspondant au dossier contenant les dictionnaire.</p>
+<p>Le chargement d’un corpus se fait avec l’outil de “gestion de corpus” qui se trouve sous l’onglet “Fichier”.</p>
+<p><img alt="Gestion de corpus" src="_images/gestion_de_corpus.png" /></p>
+<p>Une fois dans le gestionnaire de projet, on observe deux cadrans. À gauche, le cadran affiche l’adresse des textes du corpus. Pour le moment il est vide. À droite, le cadran affiche l’adresse des dictionnaires. Si Prospéro a été configuré, vous devez d’ailleurs voir l’adresse correspondant au dossier contenant les dictionnaire.</p>
 <p>Il y a plusieurs façons pour ajouter des textes.</p>
 <ol class="simple">
 <li><p>On peut les ajouter un à un</p></li>
 <li><p>Il est possible de “glisser-déposer” une liste de textes dans le cadran de gauche</p></li>
 <li><p>En ouvrant un projet déjà existant. On utilise pour cela un fichier “.prc”.</p></li>
 </ol>
-<p>Une fois les textes ajoutés, on ajoute les dictionnaires de concepts, si on en a, c’est-à-dire le dictionnaire des êtres fictifs, des catégories et des collections. On peut ensuite enregistrer le projet. Cela créera un fichier “.prc”.</p>
+<p>Une fois les textes ajoutés, on ajoute les dictionnaires de concepts si on en a, c’est-à-dire le dictionnaire des êtres fictifs, des catégories et des collections. On peut ensuite enregistrer le projet. Cela créera un fichier “.prc”.</p>
+<p><img alt="Gestionnaire de corpus vide " src="images/gestionnaire_de_corpus_vide.png" /></p>
+<p><img alt="Gestionnaire de corpus chargé" src="images/gestionnaire_de_corpus_charge.png" /></p>
 <section id="zoom-sur-le-fichier-prc">
 <h2>Zoom sur le fichier “.prc”<a class="headerlink" href="#zoom-sur-le-fichier-prc" title="Permalink to this headline">#</a></h2>
+<p>Le fichier “.prc” (pour Projet de corpus) contient deux types d’information : l’adresse des dictionnaires utilisés et l’adresse des textes du corpus. C’est ce fichier qu’on utilise quand on charge un corpus en utilisant la fonction “ouvrir un projet” et qu’on crée lorsqu’on enregistre un projet.</p>
+<p><img alt="PRC" src="_images/image_prc.png" /></p>
+<p>Ainsi quand on s’échange des corpus, il ne faut pas oublier de joindre le fichier “.prc” pour être sûr de travailler sur les mêmes textes et les mêmes dictionnaires. Par exemple, imaginons que je veux partager un corpus avec Waldir. La première fois, je lui enverrais l’ensemble des textes, ainsi que mes dictionnaires et le fichier “prc”. Waldir aura plus qu’à ouvrir ce fichier dans Prospéro en vérifiant au préalable que les adresses des fichiers correspondent bien à leur emplacement sur son ordinateur. Si ce n’est pas le cas, il faudra d’abord remplacer l’adresse inscrite dans le fichier par le bon chemin.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En langage Prospéro, on parle de sous-corpus pour désigner des textes qu’on a séparé du corpus général, puis regroupés ensemble parce qu’ils ont été produits par le même auteur, utilisent le même être-fictif, etc.</p>
+</div>
+</aside>
+<p>Ensuite, si Waldir a crée un “sous-corpus” au cours de sa session de travail sans ajouter de texte, il lui suffira de me transmettre uniquement le “prc” pour que je reparte du même point que lui. Par contre, s’il a ajouté un texte ou modifié les dictionnaires, Waldir devra également m’envoyer le nouveau texte et les dictionnaires modifiés.</p>
+</section>
+<section id="traiter-et-lecture-des-structures-du-corpus">
+<h2>Traiter et lecture des structures du corpus<a class="headerlink" href="#traiter-et-lecture-des-structures-du-corpus" title="Permalink to this headline">#</a></h2>
+<p>Une fois les textes et les dictionnaires chargés, le corpus sauvegardé, on peut “traiter” le corpus en cliquant sur “corpus entier”. En faisant cela, on va créer un nouveau fichier appelé “.bdt” dans lequel Prospéro “enregistre” les traitement qu’il a appliqué sur les textes. Ce sont ces fichiers que Prospéro analyse ensuite lorsqu’on clique sur “lecture des structures du corpus”. Ce process implique deux choses :</p>
+<ol class="simple">
+<li><p>Quand on crée une nouvelle expression, il faut retraiter le corpus pour mettre à jour les structures du corpus</p></li>
+<li><p>En revanche, si on a pas apporté de changement particulier et que les bdt existent déjà, on peut directement lire les structures du corpus.</p></li>
+</ol>
+<p><img alt="Lecture du corpus" src="_images/lecture_corpus.png" /></p>
 </section>
 </section>
 
@@ -411,10 +450,10 @@ title="Print to PDF"
             <p class="prev-next-title">Configuration de Prospéro</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="bibliographie.html" title="next page">
+    <a class='right-next' id="next-link" href="les_dictionnaires_de_concepts.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bibliographie</p>
+        <p class="prev-next-title">Concepts</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
