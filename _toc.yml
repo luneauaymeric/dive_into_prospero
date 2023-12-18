@@ -9,6 +9,7 @@ chapters:
 - file: install_prospero
 - file: configuration
 - file: charger_un_corpus
+- file: les_dictionnaires_de_concepts
 - file: bibliographie
 
 
